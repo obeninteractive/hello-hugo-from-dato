@@ -38,4 +38,11 @@ This websites uses:
 
 To convert the content stored on DatoCMS into local Markdown files that can be digested by Hugo, the datocms-client plugin requires an explicit mapping file called [`dato.config.js`](https://github.com/datocms/hugo-portfolio/blob/master/dato.config.js). You can read more about the commands available in this file [in the plugin documentation](https://github.com/datocms/js-datocms-client/blob/master/docs/dato-cli.md).
 
+## Mocodo
 
+%%mocodo --relations latex
+CLIENT: Réf. client, Nom, Prénom, Adresse
+DF, 0N CLIENT, 11 COMMANDE
+COMMANDE: Num commande, Date, Montant
+INCLURE, 1N COMMANDE, 0N PRODUIT: Quantité
+PRODUIT: Réf. produit, Libellé, Prix unitaire
